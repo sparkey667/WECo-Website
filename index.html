@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head><a href="WECo">WECo</a>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>WECo</title> 
+</head>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+	.text-green{
+		color: green;
+	
+	.mySlides{
+		display: none;
+	}
+	.w3-left, .w3-right, .w3-tag {
+		cursor:pointer
+		}
+	.w3-tag {
+		height:15px;
+		width:15px;
+		padding:0;
+		margin-top:6px
+		}
+	.bigimag1-1{
+		backgroud-position: center;
+		background-size: cover;
+		
+	}
+	.right{
+		position:absolute
+		right: 0px;
+   		 width: 300px;
+   		 border: 3px solid #73AD21;
+   		 padding: 10px;
+	}
+	p{
+		font:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+	img{
+		float: left;
+	}
+	body{
+		background-color:#228B22;
+	}
+</style>
+
+
+<!--Navbar on computers-->
+<div class="container-fluid">
+  <ul class="w3-navbar w3-left-align w3-black w3-center w3-top w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-left" style="width:20% !important"><a href="index.html" class="w3-margin-left"><b>WEC</b>o</a></li>
+  <li class="w3-right w3-hide-small">
+  <a href="about.html" class="w3-left">About</a>
+  <a href="Officers.html" class="w3-left">E-Board</a>
+  <a href="projects.html" class="w3-left">Projects</a>
+  </li>
+</ul>
+</div>	
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="about.html">About</a></li>
+    <li><a class="w3-padding-large" href="Officers.html">E-Board</a></li>
+    <li><a class="w3-padding-large" href="projects.html">Projects</a></li>
+  </ul>
+</div>
+    
+<body class="w3-mobile" style="background-color:#228B22;" >
+
+<!--Slideshow-->
+<div class="w3-container-fluid w3-mobile">
+  <div class="w3-display-container w3-container-fluid mySlides">
+  <center>
+    <img src="images\WECo.png" alt= "Gren-Build" style="width:100%; height:500px">
+    </center>
+  </div> 
+<div class="w3-display-container w3-container-fluid mySlides" id="home">
+	<img src="images\EBar.jpg" alt="EBar" style="width:100%; height:500px">
+  </div>
+  
+  <div class="w3-display-container  w3-container-fluid mySlides">
+  <center>
+    <img src="images\EarthDay.jpg" alt= "Earth Day 2017" style="width:100%;height:500px">
+    </center>
+  </div>
+  
+  <div class="w3-display-container w3-container-fluid mySlides">
+  <center>
+    <img src="images\GreenBuild2016.jpg" alt= "Gren-Build" style="width:100%;height:500px">
+    </center>
+  </div>
+  
+   <div class="w3-display-container w3-container-fluid mySlides">
+  <center>
+    <img src="images\20141023_170402.jpg" alt= "Gren-Build" style="width:100%;height:500px">
+    </center>
+  </div>
+	  
+      <div class="w3-display-container w3-container-fluid mySlides">
+  <center>
+    <img src="images\DSCN0880.jpg" alt= "Gren-Build" style="width:100%; height:500px">
+    </center>
+  </div>
+  
+<div class="w3-display-container w3-container-fluid mySlides">
+  <center>
+    <img src="images\Cleanup.jpg" alt= "Gren-Build" style="width:100%; height:500px">
+    </center>
+  </div> 
+  
+
+  <!--<div class="w3-display-container mySlides">
+  <center>
+    <img src="https://lh6.googleusercontent.com/qV81-fLDQn3gM2DFKnLwVIH18zpFpSfQxw6FGT6TSkx8yhPz2fMyG-rZ01bzMYmvC1jKN_mbZV8fPz0=w1920-h947-rw" alt= "Gren-Build" width="1600" height="550">
+    </center>
+    <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+      <span class="w3-white w3-padding-large w3-animate-bottom"></span>
+    </div>
+  </div> -->
+  
+  
+  <!-- end of slideshow-->   
+<!-- next slide-->
+<center>
+  <div class="w3-container w3-black w3-padding-8 w3-large" width="1600">
+    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+    <div class="w3-right" onclick="plusDivs(1)"><em class="fa fa-arrow-circle-right w3-hover-text-teal"></em></div>
+    <div class="w3-center">
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+       <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+       <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+    </div>
+    </div>
+  </center>
+  </div>
+  <!-- end of slide-->
+  
+<!--News and Upcoming Events-->
+<div class="w3-container">
+ <div class="w3-container container-fluid w3-padding">
+
+      <div class=" w3-card-4 w3-mobile w3-lime w3-padding">
+        <h1>News and Events</h1>
+      <ul>
+       <li>General Body Meetings, Mondays at 6:30 in Beatty 303</li>
+       <li>Green Art's Festival October 28th from 12-4pm</li>
+      <li>GreenBuild Boston November 8th and 9th from 9am to 6pm </li>
+      <li>WECo at Fall Open House November 19th from 10:30am to 2pm</li>
+      <li>New Water Bottles Coming Soon</li>
+      <li>Evens Way Clean Up Coming Soon</li>
+      <li>Emerald Necklace Bridge Coming Soon</li>
+      
+      <a href="https://www.wit.edu/news/wentworth-earns-spot-among-country%E2%80%99s-top-%E2%80%98green%E2%80%99-colleges"><li>Wentworth Earns Spot Among Country’s Top ‘Green’ Colleges</li></a>
+      </ul>
+     
+  </div>
+ </div>
+ </div>
+ 
+ <!--Links--->
+ <!-- column 1--->
+ <div class="w3-third w3-padding-8 w3-container" style="background">   
+<div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-green ">
+    	<center class="w3-margin-bottom w3-margin-top">
+    		<a href="Ebar.html"><img src="images\EBar.jpg" alt="EBar" style="width:100%"></a>
+             
+    	</center>
+        </div>
+    </div>
+    
+    <div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-lime">
+        <center>
+    	<h2 class="w3-mobile">Inform</h2>
+        </center>
+        </div>
+    </div>
+    
+    <div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-light-green">
+    	<h2 class="w3-mobile">Who Are We?</h2>
+    	<center>
+    		<a href="about.html"><img src="images\AcceptedStudentsDay.JPG" alt="What is WECo?" class="w3-padding-16 w3-mobile" style="width:100%"></a>
+    	</center>
+        </div>
+    </div>
+    
+    
+</div>
+
+<!--- Column 2--->
+ <div class="w3-third w3-padding-8 w3-container">   
+ 
+ <div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-lime">
+        <center>
+    	<h2 class="w3-mobile">Promote</h2>
+        </center>
+        </div>
+    </div>
+ 
+<div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-light-green">
+    	<h2 class="w3-mobile">Explore Our Projects</h2>
+    	<center>
+    		<a href="projects.html"><img src="images\EBarPresentation.png" alt="Our Projects" class="w3-padding-16 w3-mobile" style="width:100%"></a>
+    	</center>
+        </div>
+    </div>
+    
+    <div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-green ">
+    	<center class="w3-margin-bottom w3-margin-top">
+    		<a href="GreenBuild.html"><img src="images\GreenBuild2016.jpg" alt="GreenBuild" style="width:100%"></a>
+    	</center>
+        </div>
+    </div>
+</div>
+<!--- Column 3--->
+ <div class="w3-third w3-padding-8 w3-container">   
+<div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-light-green">
+    	<h2 class="w3-mobile">Our Officers</h2>
+    	<center>
+    		<a href="Officers.html"><img src="images\FinalWECo Seal.png" alt="Our Officers" class="w3-padding-16 w3-mobile" style="width:70%"></a>
+    	</center>
+        </div>
+    </div>
+    
+    <div class="w3-card-4 w3-padding-8 ">
+    	<div class="w3-container w3-green ">
+    	<center class="w3-margin-bottom w3-margin-top">
+    		<a href="FreshCheck.html"><img src="images\FreshCheckDay.JPG" alt="Fresh Check Day" style="width:100%"></a>
+    	</center>
+        </div>
+    </div>
+    
+    <div class="w3-card-4 w3-padding-8">
+    	<div class="w3-container w3-lime">
+        <center>
+    	<h2 class="w3-mobile">Network</h2>
+        </center>
+        </div>
+    </div>
+</div>
+ <div class="w3-container container-fluid w3-padding-12">  
+ </div>
+<!-- Footer -->
+<div class="container-fluid">
+<footer class="w3-center w3-black w3-padding-12">
+
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/witgreenteam"><i class="fa fa-facebook-official w3-hover-text-indigo" ></i></a>
+    <a href="https://www.instagram.com/w_e_co/?hl=en"><i class="fa fa-instagram w3-hover-text-purple" ></i></a>
+    <a href="https://twitter.com/WITEnviroCollab"><i class="fa fa-twitter w3-hover-text-light-blue" ></i></a>
+  </div>
+  <p> 550 Huntingtion Ave, Boston Ma 02115 | Phone: (401) 954-6450 | Email: greenteam@wit.edu</p>
+</footer>
+</div>
+ </body>
+</html>
+  <script>
+  
+<!-- Slideshow script-->
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
